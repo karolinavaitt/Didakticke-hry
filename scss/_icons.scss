@@ -1,0 +1,42 @@
+@use "mixins" as m;
+@use "base";
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(232, 236, 239);
+}
+
+.icon__link {
+  text-decoration: none;
+}
+.icon__name {
+  color: base.$secondarycolor;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  padding: 20px;
+}
+.fa-education::before {
+  background-image: url(/images/education-icon.png);
+  @include m.beforeElm;
+}
+.fa-education:hover::before {
+  background-image: url(/images/education-icon-grey.png);
+}
+.fa-school::before {
+  background-image: url(/images/school-icon.png);
+  @include m.beforeElm;
+}
+.fa-school:hover::before {
+  background-image: url(/images/school-icon-grey.png);
+}
+
+.fa-experience::before {
+  background-image: url(/images/experience-logo.png);
+  @include m.beforeElm;
+}
+
+.fa-experience:hover::before {
+  background-image: url(/images/experience-logo-grey.png);
+}

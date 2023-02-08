@@ -1,0 +1,39 @@
+@use "base";
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 6rem;
+  width: 100%;
+  background-color: base.$secondarycolor;
+  z-index: 100;
+}
+
+.nav__logo {
+  height: 90px;
+  margin-left: 2rem;
+  transition: all 0.3s;
+}
+
+.menu__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu__item {
+  margin: 0 2rem;
+}
+
+.menu__link:link,
+.menu__link:visited {
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
