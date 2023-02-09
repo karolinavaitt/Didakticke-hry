@@ -1,0 +1,16 @@
+@use "base";
+@use "mixins" as m;
+
+.activity,
+.lektor {
+  @include m.paragraph;
+  h3,
+  p {
+    margin-bottom: 20px;
+  }
+  &__photo {
+    width: 450px;
+    float: left;
+    margin-right: 20px;
+  }
+}

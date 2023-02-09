@@ -1,0 +1,24 @@
+@use "base";
+
+.kontakt {
+  color: base.$secondarycolor;
+  max-height: 100vh;
+}
+
+.kontakt__box {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 60px;
+  p {
+    line-height: 1.5;
+    font-size: 22px;
+    font-weight: 500;
+    @media screen and (max-width: 640px) {
+      font-size: 14px;
+    }
+  }
+  p a {
+    text-decoration: none;
+    color: black;
+  }
+}

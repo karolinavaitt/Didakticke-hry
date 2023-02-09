@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <!-- Hlavička -->
+
+    <header class="header">
+      <nav class="menu">
+        <div class="logo">
+          <a href="/"
+            ><img class="nav__logo" src="/images/logo.png" alt="didaktické hry"
+          /></a>
+        </div>
+
+        <ul class="menu__links">
+          <li class="menu__item">
+            <a class="menu__link" href="/">Úvod</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/pro-skoly/">Pro školy</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/pro-dospele/">Pro dospělé</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/lektor/">O lektorovi</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/kontakt/">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+ 
+ <main class="main">
+
+		{{ content | safe }}
+
+	</main>
+ <footer class="footer">© 2022 Didaktické hry | All Rights Reserved.</footer>
+  </body>
+</html>

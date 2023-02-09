@@ -1,3 +1,5 @@
+@use "base";
+
 @mixin beforeElm {
   content: "";
   display: block;
@@ -5,4 +7,18 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@mixin fontstyle {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+@mixin paragraph {
+  margin: 40px auto;
+  max-width: 1000px;
+  color: base.$secondarycolor;
+  font-size: 20px;
+  line-height: 1.5;
 }

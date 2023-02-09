@@ -1,0 +1,10 @@
+@use "base" as b;
+@use "mixins" as m;
+
+.footer {
+  background-color: b.$secondarycolor;
+  @include m.fontstyle;
+
+  text-align: center;
+  padding: 25px 0;
+}
